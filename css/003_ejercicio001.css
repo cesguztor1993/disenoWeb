@@ -1,0 +1,53 @@
+.contenedorPadre
+{
+    width: 250px;
+    height:250px;
+    position:relative;
+    overflow: hidden;
+}
+
+.contenedorImg
+{
+    width:250px;
+    height:250px;
+}
+
+.contenedorImg img
+{
+    width: 250px;
+    height: 250px;
+}
+
+
+.contenedorContenido
+{
+    width: 250px;
+    height: 300px;
+    position:absolute;
+    top:0px;
+    transition: top 0.5s ease-in-out 0s
+}
+
+
+.contenedorSuperior
+{
+    width: 250px;
+    height: 250px;
+}
+
+.contenedorInferior
+{
+    width: 250px;
+    height:50px;
+    text-align:center;
+    padding-top:15px;
+    background-color: rgba(200, 200, 200, 0.5);
+    border: solid 1px rgba(71, 66, 66, 0.5);
+}
+
+
+.contenedorContenido:hover
+{
+    top: -50px;
+   
+}

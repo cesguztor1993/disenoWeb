@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/mainEstilos.css">
+
+    <script src="js/mainScript.js"></script>
 </head>
 
 <body>
@@ -30,15 +32,21 @@
         <!--Contenido principal-->
         <section>
             <?php
-                include 'section.php';
+            $pagina = isset($_GET["p"]) ? strtolower($_GET["p"]) : 'section';
+            if ($pagina == 'section') {
+                include $pagina . '.php';
+            } else {
+                include 'contenido/' . $pagina . '.php';
+            }
             ?>
         </section>
         <!--Contenido secundario-->
         <aside>
             <?php
-                include 'aside.php';
+            include 'aside.php';
             ?>
         </aside>
+        <div class="limpieza"></div>
     </main>
 
     <!--Pie de la página web de la página web-->

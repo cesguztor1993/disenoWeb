@@ -1,0 +1,50 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+header
+{
+    background-color: #b36363;
+}
+
+nav
+{
+    background-color: #a89797;
+}
+
+
+
+main  section,aside
+{
+    float: left;
+    background-color: rgb(213, 213, 230);
+    min-height: 300px;
+    padding: 25px;
+}
+
+main section
+{
+    width: 75%;
+    box-shadow: rgb(139, 127, 127) -5px 0px 5px inset;
+
+}
+
+main aside
+{
+    width: 25%;
+}
+
+footer
+{
+    background-color: #b36363;
+}
+
+
+.limpieza
+{
+    clear: both; 
+}
