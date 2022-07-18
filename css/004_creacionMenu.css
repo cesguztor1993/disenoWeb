@@ -1,0 +1,71 @@
+/*Creación del Menú Principal*/
+.contenedorMenu {
+    width: 100%;
+    background-color: rgb(17, 16, 16);
+    border-radius: 5px;
+    height:40px;
+
+}
+.menu
+{
+    height:8px;
+    
+}
+
+.menu > li
+{
+    height: 20px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+   
+
+}
+.contenedorMenu li {
+    display: inline-block;
+    height: 20px;
+    margin-left: 15px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+.contenedorMenu li a {
+    text-decoration: none;
+    color: rgb(226, 218, 239);
+    font-weight: bold;
+}
+
+
+
+.contenedorMenu li:hover
+{
+    background-color: rgb(215, 161, 59);
+}
+
+
+
+.menu > li:hover .subMenu
+{
+    display: block;
+}
+/*Creación del Submenú*/
+.subMenu
+{
+    position: absolute;
+    display:block;
+    background-color: rgb(65, 60, 60);
+    border-radius: 5px;
+    top:40px;
+    left: 0px;
+    list-style: none;
+    z-index: 1000;
+    display: none;
+}
+
+
+.subMenu li
+{
+    width: 200px;
+    margin-left: 0px;
+}
